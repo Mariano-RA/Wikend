@@ -14,6 +14,7 @@ COPY --from=builderBack /app/package.json /app
 RUN npm install
 COPY --from=builderBack /app/dist ./dist
 COPY --from=builderBack /app/client ./client
+COPY --from=builderBack /app/database ./database
 
 EXPOSE 3000
 
