@@ -45,7 +45,7 @@ import { File } from './file/entities/file.entity';
     // }),
 
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '/client'),
+      rootPath: join(__dirname, '..', 'client'),
     }),
   ],
   controllers: [AppController],
